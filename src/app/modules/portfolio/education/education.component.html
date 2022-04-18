@@ -1,0 +1,142 @@
+<section id="cv">
+    <div class="container">
+        <h2><strong>Curriculum vitae</strong></h2>
+        <span class="bar-title mb-5"></span>
+        <div class="row">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <h4><strong>Education</strong></h4>
+                <ul class="timeline">
+                    <li>
+                        <h5><strong>Master 2 E-services</strong> </h5>
+                        <em class="font-italic">Master of digital services<br> University of Lille, Fr</em>
+                        <p class="year p-2 d-flex justify-content-center">2019 - 2020</p>
+                    </li>
+                    <li>
+                        <h5>Master 1 computer science</h5>
+                        <em class="font-italic">General Master Computer Science <br> University of Lille, Fr</em>
+                        <p class="year p-2 d-flex justify-content-center">2018 - 2019</p>
+                    </li>
+                    <li>
+                        <h5>License 3 computer science</h5>
+                        <em class="font-italic">License of Computer Science <br> University of Lille, Fr</em>
+                        <p class="year p-2 d-flex justify-content-center">2015 - 2018</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <h4><strong>Experiences</strong></h4>
+                <ul class="timeline">
+                    <li>
+                        <h5>Freelance developer</h5>
+                        <em>Scotty, Lyon, Fr</em>
+                        <div class="d-flex flex-row">
+                            <p class="year p-2 d-flex justify-content-center">2020 - 2021 (2 mois)</p>
+                            <button (click)="detailOnClick('freelanceScotfy_detail')" type="button"
+                                class="btn btn-primary">+
+                                Detail</button>
+                        </div>
+                        <p *ngIf="freelanceScotfyIsShown">
+                            <strong>Task 1:</strong> Implementation of a theme manager (colors, logo). <br>
+                            <strong>Task 2:</strong> Setting up a virtual folder manager that can
+                            contain Qlik Sense apps.<br>
+                            <strong>Task 3:</strong> Development of a resource saving interface.<br>
+                            <strong>Task 4:</strong> Creating customizable web pages: Qlik Sense Mashups (En
+                            Classes).<br>
+                            <strong>Technologies:</strong> Java, J2EE, Angular 11, Angular Materials, pgSql, Qlik Sense
+                        </p>
+                    </li>
+                    <li>
+                        <h5>Freelance developer</h5>
+                        <em>AGC Glass Europe, Maubeuge, France</em>
+                        <div class="d-flex flex-row">
+                            <p class="year p-2 d-flex justify-content-center">2020 - 2021 (5 months)</p>
+                            <button (click)="detailOnClick('freelance_detail')" type="button" class="btn btn-primary">+
+                                Detail</button>
+                        </div>
+                        <p *ngIf="freelanceIsShown">
+                            <strong>Assignment 1:</strong> Development of a supplier rating application by
+                            the buyers.<br>
+                            <strong>Assignment 2:</strong> Maintenance évolutive et corrective d'applications.<br>
+                            <strong>Technologies:</strong> JAVA 8, Spring, Angular 8, Angular Materials, MySql
+                        </p>
+                    </li>
+                    <li>
+                        <h5>Work-study developer</h5>
+                        <em>AGC Glass Europe, Maubeuge, France</em>
+                        <div class="d-flex flex-row">
+                            <p class="year p-2 d-flex justify-content-center">2019 - 2020 (1 year)</p>
+                            <button (click)="detailOnClick('alternance_detail')" type="button" class="btn btn-primary">+
+                                Detail</button>
+                        </div>
+                        <p *ngIf="alternanceIsShown">
+                            <strong>Assignment 1:</strong> Application for managing trucks entering the site<br>
+                            <strong>Assignment 2:</strong> Improvement of a plan creation application
+                            preventions.<br>
+                            <strong>Assignment 3:</strong> Glass order shaping application, in
+                            the interest of a
+                            better readability of priorities for production teams. <br>
+                            <strong>Technologies:</strong> JAVA 8, Spring, Angular 8, Angular Materials, MySql
+                        </p>
+                    </li>
+                    <li>
+                        <h5>Software Developer Intern</h5>
+                        <em>Scotty, Lyon, Fr</em>
+                        <div class="d-flex flex-row">
+                            <p class="year p-2 d-flex justify-content-center">2018 (3 months)</p>
+                            <button (click)="detailOnClick('stage_detail')" type="button" class="btn btn-primary">+
+                                Detail</button>
+                        </div>
+                        <p *ngIf="stageIsShown">
+                            <strong>Multilingual:</strong> Implementation of a language management system to
+                            allow the user to choose the language of interfaces, messages and logs.<br>
+                            <strong>Licence key:</strong> Software validation using a license key based
+                            on the Windows username.<br>
+                            <strong>Technologies:</strong> C#, .NET, AES-256 encryption
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                <div class="container row">
+                    <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                        <h4><strong>Languages</strong></h4>
+                        <div class="noProgress langue">
+                            <span class=""><img src="assets/images/france-flag.png" width="20"
+                                    alt="drapeau de la france"><strong> French</strong> <i class="val">
+                                    Running</i></span>
+                        </div>
+                        <div class="noProgress langue">
+                            <span class=""><img src="assets/images/united-kingdom-flag.png" width="20"
+                                    alt="drapeau du royaume uni"><strong> English</strong> <i class="val"> Good
+                                    level</i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container row">
+                    <div class="mt-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                        <h4><strong>Center of interest</strong></h4>
+                        <div class="noProgress langue">
+                            <span>
+                                <fa-icon [icon]="volleyBallIcon"></fa-icon><strong> Sport</strong> <i class="val"> 5
+                                    years
+                                    volleyball</i>
+                            </span>
+                        </div>
+                        <div class="noProgress langue">
+                            <span>
+                                <fa-icon [icon]="planeIcon"></fa-icon><strong> Travels</strong> <i class="val">
+                                    Belgium, Spain, Netherlands, Switzerland</i>
+                            </span>
+                        </div>
+                        <div class="noProgress langue">
+                            <span>
+                                <fa-icon [icon]="gameIcon"></fa-icon><strong> Board games </strong> <i class="val">
+                                    Checkers and dominoes game, Among US, Ludo, ..etc</i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

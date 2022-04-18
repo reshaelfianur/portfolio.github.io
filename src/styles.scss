@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/cdk/overlay-prebuilt.css';
+
+@media only screen and (max-width: 993px) {
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+}
+
+.bar-title {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: #149ddd;
+}
+
+section {
+    padding-top: 100px;
+}
+
+h2 {
+    color: rgb(22, 59, 90);
+}
+
+html {
+    scroll-behavior: smooth;
+}
